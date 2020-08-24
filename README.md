@@ -2,7 +2,9 @@
 
 ## What is Ansible?
 
-![Alt text](img/Ansible.jpg?raw=true "Title")
+<p align="center">
+  <img width="300" height="150" src="img/Ansible.jpg">
+</p>
 
 Ansible is an open source automation platform. It's simple yet powerful. Ansible can help you with config management, deployment and task automation.
 
@@ -11,8 +13,9 @@ Ansible uses SSH which is assumed to be installed on all the systems you want to
 
 
 ## What are Ansible Playbooks?
-
-![Alt text](img/AnsiblePlaybook.png?raw=true "Title")
+<p align="center">
+  <img width="250" height="150" src="img/AnsiblePlaybook.png">
+</p>
 
 Ansible playbooks are highly customizable scripts that are used to execute a series of tasks and commands. 
 
