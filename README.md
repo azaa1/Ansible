@@ -23,4 +23,6 @@ A playbook is like a recipe or an instructions manual which tells Ansible what t
 
 ## Files
 
-[ping.yaml](ping.yaml) - Simple Ansible playbook to ping all hosts. 
+[ping.yaml](playbooks/ping.yaml) - Simple Ansible playbook to ping all hosts. 
+
+[install-vim.yaml](playbooks/install-vim.yaml) - Simple Ansible playbook which installs "vim", if the Linux distribution is CentOS7. 
