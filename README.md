@@ -30,6 +30,9 @@ Ansible playbooks are highly customizable scripts that are used to execute a ser
 
 A playbook is like a recipe or an instructions manual which tells Ansible what to do when it connects to each machine. Playbooks are written in YAML
 
+## [Ad-hoc Commands](ad-hoc)
+
+
 ## [Playbooks](playbooks)
 
 [ping.yaml](playbooks/ping.yaml) - Simple Ansible playbook to ping all hosts. 
