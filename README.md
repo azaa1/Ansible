@@ -10,7 +10,13 @@ Ansible is an open source automation platform. It's simple yet powerful. Ansible
 
 Ansible uses SSH which is assumed to be installed on all the systems you want to manage. Also it’s written in Python which needs to be installed on the remote host.
 
+[Official Documentation](https://www.ansible.com/)
 
+## What are Ansible ad-hoc commands?
+
+Ad-hoc commands in Ansible allow you to execute simple tasks at the command line against one or all of your hosts. An ad-hoc command consists of two parameters; the host group that defines on what machines to run the task against and the Ansible module to run.
+
+[Official Documentation](https://docs.ansible.com/ansible/latest/user_guide/intro_adhoc.html)
 
 ## What are Ansible Playbooks?
 <p align="center">
@@ -21,7 +27,7 @@ Ansible playbooks are highly customizable scripts that are used to execute a ser
 
 A playbook is like a recipe or an instructions manual which tells Ansible what to do when it connects to each machine. Playbooks are written in YAML
 
-## Files
+## [Playbooks](playbooks)
 
 [ping.yaml](playbooks/ping.yaml) - Simple Ansible playbook to ping all hosts. 
 
