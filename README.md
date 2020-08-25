@@ -13,6 +13,9 @@ Ansible uses SSH which is assumed to be installed on all the systems you want to
 [Official Documentation](https://www.ansible.com/)
 
 ## What are Ansible ad-hoc commands?
+<p align="center">
+  <img width="350" height="200" src="img/adhoc.png">
+</p>
 
 Ad-hoc commands in Ansible allow you to execute simple tasks at the command line against one or all of your hosts. An ad-hoc command consists of two parameters; the host group that defines on what machines to run the task against and the Ansible module to run.
 
