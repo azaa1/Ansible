@@ -40,3 +40,7 @@ A playbook is like a recipe or an instructions manual which tells Ansible what t
 [install-vim.yaml](playbooks/install-vim.yaml) - Simple Ansible playbook which installs "vim", if the Linux distribution is CentOS7.
 
 [multipleusers.yaml](playbooks/multipleusers.yaml) - Simple Ansible playbook that adds multiple users to all managed hosts.
+
+[update-reboot.yaml](playbooks/update-reboot.yaml) - Simple Ansible playbook that update packages in Linux (CentOS, Debian, Ubuntu, Fedora, Amazon-Linux. Suse) and reboots the system. 
+
+[ubuntu_debian_kernel_patch.yaml](playbooks/ubuntu_debian_kernel_patch.yaml) - Simple Ansible playbook that downloads, updates kernel and packages in Ubuntu and reboots the system. 
