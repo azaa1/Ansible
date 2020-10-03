@@ -1,6 +1,6 @@
 ---
   - name: Install vim
-    hosts: all
+    hosts: app
     tasks:
       - name: Install vim on CentOS7
         when: ansible_distribution == "CentOS"

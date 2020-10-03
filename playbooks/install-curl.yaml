@@ -1,0 +1,8 @@
+---
+    - name: Install vim
+      hosts: db
+      tasks:
+        - name: Install vim on CentOS7
+          yum:
+            name: curl
+            state: present
