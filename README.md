@@ -44,3 +44,5 @@ A playbook is like a recipe or an instructions manual which tells Ansible what t
 [update-reboot.yaml](playbooks/update-reboot.yaml) - Simple Ansible playbook that update packages in Linux (CentOS, Debian, Ubuntu, Fedora, Amazon-Linux. Suse) and reboots the system. 
 
 [ubuntu_debian_kernel_patch.yaml](playbooks/ubuntu_debian_kernel_patch.yaml) - Simple Ansible playbook that downloads, updates kernel and packages in Ubuntu and reboots the system. 
+
+Test1
