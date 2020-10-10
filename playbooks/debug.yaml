@@ -1,0 +1,18 @@
+---
+    - name: Ping Hosts
+      hosts: development
+      gather_facts: no
+      tasks:
+        - name: Ping Hosts
+          ping:
+
+        - name: Run 'ls' command
+          command: "{{item}}"
+          with_items:
+            - ls
+            - pwd
+          register: command_output
+
+        - name: Run 'debug' to read command_output
+          debug:
+            var: command_output  
