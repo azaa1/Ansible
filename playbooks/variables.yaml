@@ -1,0 +1,7 @@
+---
+  - name: This playbook takes 2 variables, 1 for hosts and 1 for packages
+    hosts: "{{ group }}"
+    tasks:
+      - name: Install the package that is defined in variable
+        yum:
+          name: "{{ package }}"
