@@ -1,7 +1,6 @@
 ---
   - name: Ping Hosts
     hosts: development
-    gather_facts: no
     tasks:
       - name: Ping Hosts
         ping:

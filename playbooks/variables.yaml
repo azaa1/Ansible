@@ -1,6 +1,8 @@
 ---
   - name: This playbook takes 2 variables, 1 for hosts and 1 for packages
     hosts: "{{ group }}"
+    vars_files:
+      - "../variables/values-variables.yaml"
     tasks:
       - name: Install the package that is defined in variable
         yum:

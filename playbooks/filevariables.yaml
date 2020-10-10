@@ -1,0 +1,9 @@
+---
+    - name: Ping Hosts
+      hosts: "{{ group }}"
+      gather_facts: no
+      vars_files:
+        - "../variables/devservers.yaml"
+      tasks:
+        - name: Ping Hosts
+          ping:
