@@ -1,0 +1,14 @@
+---
+  - name: Test File
+    hosts: "{{ group }}"
+    gather_facts: "{{ gather_facts }}"
+    vars_files:
+      - "../variables/testfile-values.yaml"
+    tasks:
+      - name: Add Test File
+        file:
+          path: /tmp/{{ file_name }}
+          state: "{{ file_state }}"
+          mode: "{{ file_mode }}"
+
+          
