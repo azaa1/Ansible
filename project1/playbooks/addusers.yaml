@@ -1,0 +1,17 @@
+---
+  - name: Users Management
+    hosts: "{{ group }}"
+    gather_facts: "{{ gather_facts }}"
+    vars_files:
+      - "../variables/addusers-values.yaml"
+    tasks:
+    # Task for User 1 - values defined in ../variables/addusers-values.yaml
+      - name: User 1
+        user: 
+          name: "{{ user_name1 }}"
+          uid: "{{ user1_uid }}"
+    # Task for User 2 - values defined in ../variables/addusers-values.yaml
+      - name: User 2
+        user: 
+          name: "{{ user_name2 }}"
+          uid: "{{ user2_uid }}"
