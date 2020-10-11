@@ -10,5 +10,13 @@
           path: /tmp/{{ file_name }}
           state: "{{ file_state }}"
           mode: "{{ file_mode }}"
-
-          
+      - name: Add a line to file
+        lineinfile:
+          path: /tmp/{{ file_name }}
+          line: "{{ line }}"
+          create: yes
+      - name: Add multiple lines
+        blockinfile:
+          path: /tmp/{{ file_name }}
+          block: |
+            {{ block }}
