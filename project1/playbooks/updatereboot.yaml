@@ -10,3 +10,7 @@
         yum:
           name: "{{ packages }}"
           state: latest
+
+      - name: Reboot
+        when: ansible_facts['distribution_major_version'] == "7"
+        reboot:

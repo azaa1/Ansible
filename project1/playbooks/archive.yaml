@@ -1,0 +1,12 @@
+---
+  - name: Archive Log Folder
+    hosts: "{{ group }}"
+    gather_facts: "{{ gather_facts }}"
+    vars_files:
+      - "../variables/archive-values.yaml"
+    tasks:
+      - name: Archive /var/log
+        archive:
+          path: "{{ path }}"
+          dest: /tmp/{{ file_name }}
+          format: gz
