@@ -1,0 +1,2 @@
+- name: Move files
+  command: mv /tmp/index.html /root/Ansible/project2/files/

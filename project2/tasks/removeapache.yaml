@@ -1,0 +1,25 @@
+#- name: Check if service exist
+#  when: ansible_hostname == "app"
+#  stat:
+#    path: /etc/init.d/httpd
+#  register: service_status
+
+- name: Service Facts
+  service_facts:
+  when: ansible_hostname == "app"
+
+- debug:
+    var: ansible_facts.services['http*']
+  when: ansible_hostname == "app"
+
+#- name: Stop Apache
+#  when: ansible_hostname == "db" and service_status.stat.exists
+#  systemd:
+#    name: httpd
+#    state: stopped
+#
+#- name: Remove Apache
+#  when: ansible_hostname == "db" and service_status.stat.exists
+#  yum:
+#    name: httpd
+#    state: absent

@@ -1,0 +1,11 @@
+- name: Install Apache
+  when: ansible_hostname == "app"
+  yum: 
+    name: httpd
+    state: latest
+
+- name: Start Apache
+  when: ansible_hostname == "app"
+  systemd:
+    name: httpd
+    state: started
